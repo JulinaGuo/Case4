@@ -1,7 +1,6 @@
-# Case4
-Google Play Comment Crawler
+# Case4: Google Play Comment Crawler
 
-1.  calling package and objects
+### Calling package and objects
 ```
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -31,7 +30,7 @@ except:
   pass
 ```
 
-2. acquire html codes
+### Acquire html codes
 ```
 for i in range(100): # 動作總共執行次數
   # 每往下滑動五次須點擊一次按鈕
@@ -46,7 +45,7 @@ for i in range(100): # 動作總共執行次數
     pass
 ```
 
-3. transfer to structured data
+### Transfer to structured data
 ```
 # 轉換為結構式資料
 soup = BeautifulSoup(chrome.page_source)
